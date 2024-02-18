@@ -1,0 +1,4 @@
+poner en package.json
+
+    "@mui/material": "^5.15.10",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.16",
