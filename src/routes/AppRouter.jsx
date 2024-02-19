@@ -2,31 +2,33 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { RouterInterno } from './RouterInterno';
 import { RutasPrivadas } from './RutasPrivadas';
 import { RutasPublicas } from './RutasPublicas';
-import Login from '../pages/Login';
+import NavBarComponent from '../components/NavBarComponent';
+import { MainPage } from '../pages/MainPage';
 
 
 
 
 
 const AppRouter = () => {
-    return (
+    return (<>
+        <NavBarComponent />
         <BrowserRouter>
             <Routes>
-            
-                <Route path="/login" element={
+                <Route path="/principal" element={
                     <RutasPublicas>
-                        <Login />
+                        <MainPage />
                     </RutasPublicas>
                 } />
-                
+
                 <Route path="/*" element={
                     <RutasPrivadas >
                         <RouterInterno />
                     </RutasPrivadas>
                 } />
-            
+
             </Routes>
         </BrowserRouter>
+    </>
 
     )
 }

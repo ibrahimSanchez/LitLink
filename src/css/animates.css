@@ -1,0 +1,12 @@
+/* Configuración inicial para el elemento a aparecer */
+.elemento-a-aparecer {
+    opacity: 0;
+    transform: translateY(20px); /* Empieza ligeramente desplazado hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+}
+
+/* Clase para mostrar el elemento */
+.elemento-a-aparecer.mostrar {
+    opacity: 1;
+    transform: translateY(0); /* Sin desplazamiento */
+}

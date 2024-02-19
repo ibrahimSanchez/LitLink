@@ -1,0 +1,34 @@
+/* styles.css */
+:root {
+    --text: #280e04;
+    --background: #dad2cd;
+    --primary: #280E04;
+    --secondary: #dedcff;
+    --accent: #613625;
+    --darkBlue: #111828;
+}
+
+
+
+body {
+    background: var(--background);
+}
+
+
+.imgBoxShadow {
+    box-shadow: 0 10px 20px 0 var(--primary);
+}
+
+.c-ligtBrown {
+    color: var(--text);
+}
+
+.view {
+    height: 70vh;
+    background: var(--primary);
+}
+
+.imgAnimate:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
